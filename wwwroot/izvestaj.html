@@ -24,45 +24,40 @@
             <div id="mainCont"> 
                 <div id="left"> 
                     <div id="divFilter">
-                        <button style="margin: 2%;"> Prvo </button>
-                        <button style="margin: 2%;"> Drugo </button>
-                        <button style="margin: 2%;"> Trece </button>
+                        <input type="date" style="margin: 2%;">
+                        <input type="date" style="margin: 2%;">
+                        <select name="team" id="team" style="margin: 2%;"> 
+                            <option value="mSestra">mSestra</option>
+                            <option value="Doktor">Doktor</option>
+                            <option value="ITsluzba">ITsluzba</option>
+                            <option value="Portir">Portir</option>
+                            <option value="Cistacica">Cistacica</option>
+                        </select>
+                        <input type="search" style="margin: 2%;">
                     </div>
                     <div id="divTable">
-                        <table>
+                        <table style="border-spacing: 0px; width: 100%;">
                             <thead>
                                 <tr>
-                                    <th style="border: 1px solid black;"> Vreme Prijave </th>
-                                    <th> Vreme Odjave </th>
-                                    <th> Ime i Prezime </th>
-                                    <th> Pozicija </th>
-                                    <th> Nesto Peto </th>
+                                    <th class="thTable"> Datum Prijave </th>
+                                    <th class="thTable"> Vreme Odjave </th>
+                                    <th class="thTable"> Ime i Prezime </th>
+                                    <th class="thTable"> Sluzba </th>
+                                    <th class="thTable"> JBMG </th>
+                                    <th class="thTable"> PIC </th>
+
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <th>Vreme Prijave</th>
-                                    <th>Vreme Odjave</th>
-                                    <th>Ime i Prezime</th>
-                                    <th>Pozicija</th>
-                                    <th>Nesto Peto</th>
-                                </tr>
-                                <tr>
-                                    <th>Vreme Prijave</th>
-                                    <th>Vreme Odjave</th>
-                                    <th>Ime i Prezime</th>
-                                    <th>Pozicija</th>
-                                    <th>Nesto Peto</th>
-                                </tr>
+                            <tbody id="tBody">
                                 
                             </tbody>
                         </table>
                     </div> 
                 </div>
                 <div id="right"> 
-                    <button class="btn"> Prvo </button>
-                    <button class="btn"> Drugo </button>
-                    <button class="btn"> Trece </button>
+                    <button class="btn"> Trazi </button>
+                    <button class="btn"> Ponisti </button>
+                    <button class="btn"> Stampaj </button>
                 
                     
                 </div> 
@@ -75,6 +70,6 @@
 
 
         
-        <script src="" async defer></script>
+        <script src="scripts/izvestaj.js" async defer></script>
     </body>
 </html>

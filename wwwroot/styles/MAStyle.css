@@ -91,6 +91,8 @@ table{
 #divTable{
     background-color: turquoise;
     display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
 
     
 }
@@ -107,6 +109,9 @@ table{
     margin: 10%;
 }
 
-.thtable{
+.thTable{
+    border: 1px solid black;
+    margin: 0px;
+    padding: 0px;
     
 }
