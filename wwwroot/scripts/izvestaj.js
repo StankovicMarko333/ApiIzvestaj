@@ -1,40 +1,60 @@
 
 
 
+function Trazi(){
+    // window.location.reload();   pre ponovne pretrage potrebno je najpre isprazniti tabelu
+    CreateColumn();
+    CreateColumn();
+    CreateColumn();
+}
+
+function CreateColumn(){
 
 let body = document.getElementById("tBody");
 
 let tr = document.createElement("tr");
 body.appendChild(tr);
 
-let td1 = document.createElement("td");
-tr.appendChild(td1);
-td1.textContent = "dat od";
-td1.className = "thTable";
+let dOd = document.createElement("td");
+tr.appendChild(dOd);
+dOd.textContent = "dat od";
+dOd.className = "thTable";
 
-let td2 = document.createElement("td");
-tr.appendChild(td2);
-td2.textContent = "dat do";
-td2.className = "thTable";
+let dDo = document.createElement("td");
+tr.appendChild(dDo);
+dDo.textContent = "dat do";
+dDo.className = "thTable";
 
-let td3 = document.createElement("td");
-tr.appendChild(td3);
-td3.textContent = "Ime i prez";
-td3.className = "thTable";
+let name = document.createElement("td");
+tr.appendChild(name);
+name.textContent = "Ime i prez";
+name.className = "thTable";
 
-let td4 = document.createElement("td");
-tr.appendChild(td4);
-td4.textContent = "dat od";
-td4.className = "thTable";
+let sluzba = document.createElement("td");
+tr.appendChild(sluzba);
+sluzba.textContent = "dat od";
+sluzba.className = "thTable";
 
-let td5 = document.createElement("td");
-tr.appendChild(td5);
-td5.textContent = "dat od";
-td5.className = "thTable";
+let JBMG = document.createElement("td");
+tr.appendChild(JBMG);
+JBMG.textContent = "dat od";
+JBMG.className = "thTable";
 
-let td6 = document.createElement("td");
-tr.appendChild(td6);
-td6.textContent = "dat od";
-td6.className = "thTable";
+let PIC = document.createElement("td");
+tr.appendChild(PIC);
+PIC.textContent = "dat od";
+PIC.className = "thTable";
 
+}
 
+function Delete(){
+    window.location.reload();
+}
+
+function Print(){
+   var divToPrint=document.getElementById("divTable");
+   newWin= window.open("");
+   newWin.document.write(divToPrint.outerHTML);
+   newWin.print();
+   newWin.close();
+}
