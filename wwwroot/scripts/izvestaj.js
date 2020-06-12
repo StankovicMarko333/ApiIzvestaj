@@ -58,3 +58,57 @@ function Print(){
    newWin.print();
    newWin.close();
 }
+
+
+
+
+let team;
+    team = document.getElementById("team");
+    
+let op;
+let niz = new Array(10);
+let i=0;
+
+
+// let op = document.createElement("option");
+// op.value = "doktor";
+// op.text = "Doktor";
+// team.appendChild(op);
+
+function loadPosition(){  
+    fetch("/api/allEmps")
+        .then(resp => resp.json())
+        .then(elements => {
+            elements.forEach(emp => {
+
+                op = document.createElement("option");
+                op.value = emp.Title;
+                op.text = emp.Title; 
+                niz[i] = emp.Title;
+                i++;
+                team.appendChild(op);
+            });
+        })
+    }
+loadPosition();
+
+        //         LiItem = document.createElement("li");
+        //         LiItem.className = 'newEmp'
+        //         InItem = document.createElement("input");
+
+        //         InItem.type = 'submit';
+        //         InItem.value = emp.Name + " " + emp.Surname + " " + emp.Id + " " + emp.Sector;
+        //         InItem.addEventListener('click', function () {
+        //             document.getElementById('InId').value = emp.Id;
+        //             document.getElementById('InCode').value = emp.Code;
+        //             document.getElementById('InName').value = emp.Name;
+        //             document.getElementById('InSurname').value = emp.Surname;
+        //             document.getElementById('InTitle').value = emp.Title;
+        //             document.getElementById('InSector').value = emp.Sector;
+        //             document.getElementById('InKey').value = emp.Key;
+
+        //         });
+        //         LiItem.appendChild(InItem);
+        //         document.getElementById('empList').appendChild(LiItem)
+        //     });
+        // })

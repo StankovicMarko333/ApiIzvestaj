@@ -43,7 +43,7 @@ namespace Admin_Izvestaji_API
 
             DefaultFilesOptions options = new DefaultFilesOptions();
             options.DefaultFileNames.Clear();
-            options.DefaultFileNames.Add("modulAdmin.html");
+            options.DefaultFileNames.Add("izvestaj.html");
             app.UseDefaultFiles(options);
             app.UseStaticFiles();
 
