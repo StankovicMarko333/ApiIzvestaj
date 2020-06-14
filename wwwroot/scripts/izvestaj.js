@@ -1,33 +1,38 @@
+let tbody = document.getElementById("tBody");
+
+ function Trazi(){
+  
+    tbody.innerHTML = "";
 
 
 
 
-
-
-
-
-
-function Trazi(){
-    // window.location.reload();   pre ponovne pretrage potrebno je najpre isprazniti tabelu
-    CreateColumn();
+    
+     CreateColumn();
 
 }
 
-let body = document.getElementById("tBody");
+CreateColumn();
 
 
-function CreateColumn(){  
+function CreateColumn(){ 
+    // let body = document.getElementById("tBody");
+    
+    let from_date = document.getElementById("from_date").value;
+    console.log(from_date);
+    let to_date = document.getElementById("to_date").value;
+    console.log(to_date);
+    
+
+
     fetch("/api/allTimesEmps")
         .then(resp => resp.json())
         .then(elements => {
             elements.forEach(emp => {
                 
-                
-                
-        //    console.log(emp);
 
             let tr = document.createElement("tr");
-            body.appendChild(tr);
+            tbody.appendChild(tr);
             
             let dOd = document.createElement("td");
             tr.appendChild(dOd);
@@ -61,10 +66,6 @@ function CreateColumn(){
             // PIC.textContent = emp.Pic;
             PIC.className = "thTable";
             PIC.appendChild(image);
-                
-
-
-
 
             });
         })
