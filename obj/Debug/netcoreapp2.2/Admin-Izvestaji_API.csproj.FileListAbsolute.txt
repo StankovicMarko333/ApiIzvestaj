@@ -40,3 +40,17 @@ C:\Users\dd\Desktop\ApiIzvestaj\obj\Debug\netcoreapp2.2\Admin-Izvestaji_API.Asse
 C:\Users\dd\Desktop\ApiIzvestaj\obj\Debug\netcoreapp2.2\Admin-Izvestaji_API.RazorTargetAssemblyInfo.cache
 C:\Users\dd\Desktop\ApiIzvestaj\obj\Debug\netcoreapp2.2\Admin-Izvestaji_API.dll
 C:\Users\dd\Desktop\ApiIzvestaj\obj\Debug\netcoreapp2.2\Admin-Izvestaji_API.pdb
+C:\Users\Marko\Desktop\ApiIzvestaj\bin\Debug\netcoreapp2.2\Admin-Izvestaji_API.deps.json
+C:\Users\Marko\Desktop\ApiIzvestaj\bin\Debug\netcoreapp2.2\Admin-Izvestaji_API.runtimeconfig.json
+C:\Users\Marko\Desktop\ApiIzvestaj\bin\Debug\netcoreapp2.2\Admin-Izvestaji_API.runtimeconfig.dev.json
+C:\Users\Marko\Desktop\ApiIzvestaj\bin\Debug\netcoreapp2.2\Admin-Izvestaji_API.dll
+C:\Users\Marko\Desktop\ApiIzvestaj\bin\Debug\netcoreapp2.2\Admin-Izvestaji_API.pdb
+C:\Users\Marko\Desktop\ApiIzvestaj\obj\Debug\netcoreapp2.2\Admin-Izvestaji_API.csprojAssemblyReference.cache
+C:\Users\Marko\Desktop\ApiIzvestaj\obj\Debug\netcoreapp2.2\Admin-Izvestaji_API.csproj.CoreCompileInputs.cache
+C:\Users\Marko\Desktop\ApiIzvestaj\obj\Debug\netcoreapp2.2\Admin-Izvestaji_API.RazorAssemblyInfo.cache
+C:\Users\Marko\Desktop\ApiIzvestaj\obj\Debug\netcoreapp2.2\Admin-Izvestaji_API.RazorAssemblyInfo.cs
+C:\Users\Marko\Desktop\ApiIzvestaj\obj\Debug\netcoreapp2.2\Admin-Izvestaji_API.AssemblyInfoInputs.cache
+C:\Users\Marko\Desktop\ApiIzvestaj\obj\Debug\netcoreapp2.2\Admin-Izvestaji_API.AssemblyInfo.cs
+C:\Users\Marko\Desktop\ApiIzvestaj\obj\Debug\netcoreapp2.2\Admin-Izvestaji_API.RazorTargetAssemblyInfo.cache
+C:\Users\Marko\Desktop\ApiIzvestaj\obj\Debug\netcoreapp2.2\Admin-Izvestaji_API.dll
+C:\Users\Marko\Desktop\ApiIzvestaj\obj\Debug\netcoreapp2.2\Admin-Izvestaji_API.pdb
