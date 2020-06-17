@@ -47,13 +47,12 @@ namespace Admin_Izvestaji_API.Controllers
         }
 
         //GET api/values/allTimesEmps
-        [Route("allTimesEmps")]
+        [Route("allTimesEmps/{Sector}")]
         [DisableCors]
-        public JsonResult GetAllTimesEmps()
+        public JsonResult GetAllTimesEmps(string Sector)
         {
                  
-        var allTimesEmps = from Employee in Context.employee join Time_in in Context.time_in on Employee.Key equals Time_in.Emp_key orderby Time_in.Time select new { Time_in.Date, Time_in.Time, Employee.Name, Employee.Surname, Employee.Sector, Employee.Id, Time_in.Pic}  ;
-
+        var allTimesEmps = from Employee in Context.employee join Time_in in Context.time_in on Employee.Key equals Time_in.Emp_key orderby Time_in.Date where Employee.Sector == Sector   select new { Time_in.Date, Time_in.Time, Employee.Name, Employee.Surname, Employee.Sector, Employee.Id, Time_in.Pic};
 
 
             return new JsonResult(allTimesEmps, JsonSer);
@@ -71,16 +70,37 @@ namespace Admin_Izvestaji_API.Controllers
             public int Key { get; set; }
         }
 
-        // public class DataFilter
+        // public class dataJson2
         // {
-        //     public string from_date { get; set; }
-        //     public string to_date { get; set; }
-        //     public string Name { get; set; }
-        //     public string Surname { get; set; }
-        //     public string Title { get; set; }
-        //     public string Sector { get; set; }
-        //     public int Key { get; set; }
+        //     public string from_date {get; set;}
+
+        //     public string to_date {get; set;}
+        //     public string sector {get; set;}
+        //     public string name {get; set;}
+        //     public string surname {get; set;}
         // }
+
+        // [HttpPut("filtar")]
+        // [DisableCors]
+        // public ActionResult PostFiltar(dataJson2 filter)
+        // {
+
+        //     var  = new ContextAR();
+
+        //     empToUpdate.Id = data.Id;
+        //     empToUpdate.Code = data.Code;
+        //     empToUpdate.Name = data.Name;
+        //     empToUpdate.Surname = data.Surname;
+        //     empToUpdate.Title = data.Title;
+        //     empToUpdate.Sector = data.Sector;
+
+        //     ContextAR.SaveChanges();
+
+        //     return Content("Succes", "text/plain");
+
+        // }
+
+      
         
         //GET all sectors
         [Route("allSec")]

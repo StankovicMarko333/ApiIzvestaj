@@ -3,30 +3,58 @@ let tbody = document.getElementById("tBody");
 function Trazi() {
 
     tbody.innerHTML = "";
+ 
+    let from_date = document.getElementById("from_date").value
+    let from_date_forma = from_date.slice(8,10) + "." + from_date.slice(5,7) + "." + from_date.slice(0,4);
 
+    let to_date = document.getElementById("to_date").value
+    let to_date_forma = to_date.slice(8,10) + "." + to_date.slice(5,7) + "." + to_date.slice(0,4)
+    
+    let sector = document.getElementById("sector").value
+  
+    let employe = document.getElementById("employe").value.split(" ");
 
+    console.log(from_date_forma);
+    console.log(to_date_forma);
+    console.log(sector);
+
+    console.log(employe[0]);
+    console.log(employe[1]);
+
+    // let Filtar = new XMLHttpRequest();
+    
+    // let postFilter = {};
+    // postFilter.from_date_forma = from_date_forma;
+    // postFilter.to_date_forma = to_date_forma;
+    // postFilter.sector = sector;
+    // postFilter.name = employe[0]
+    // postFilter.surname = employe[1]
+
+ 
+    
+    // Filtar.open('POST', '/api/filtar', true)
+    // Filtar.setRequestHeader('Content-Type', 'application/json');
+   
+    // var dataJson = JSON.stringify(postFilter);
+    // Filtar.send(dataJson);
+    // alert("Uspesna unet filtar u bazu");
+    
     CreateColumn();
-
-
 }
 
+
+
+
 CreateColumn();
-
-
-
-   let date = new Date();
-   
-   
+    let date = new Date();
     document.getElementById("from_date").value = date.toLocaleDateString('en-CA');
-
-
     document.getElementById("to_date").value = date.toLocaleDateString('en-CA');
 
+//let Sektor = "IT" ;
 
 function CreateColumn() {
 
-
-    fetch("/api/allTimesEmps")
+    fetch("/api/allTimesEmps/IT")
         .then(resp => resp.json())
         .then(elements => {
             elements.forEach(emp => {
@@ -86,17 +114,6 @@ function Print() {
     newWin.print();
     newWin.close();
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

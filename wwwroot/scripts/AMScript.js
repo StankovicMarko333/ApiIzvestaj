@@ -147,6 +147,7 @@ function PostFunction() {
     
     var dataJson = JSON.stringify(postData);
     xhr.send(dataJson);
+    
     alert("Uspesan unos")
     window.location.reload();
    
