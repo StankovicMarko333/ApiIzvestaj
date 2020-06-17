@@ -21,14 +21,16 @@ function Trazi() {
     console.log(employe[0]);
     console.log(employe[1]);
 
+
+
     // let Filtar = new XMLHttpRequest();
     
     // let postFilter = {};
     // postFilter.from_date_forma = from_date_forma;
     // postFilter.to_date_forma = to_date_forma;
     // postFilter.sector = sector;
-    // postFilter.name = employe[0]
-    // postFilter.surname = employe[1]
+    // postFilter.name = employe[0];
+    // postFilter.surname = employe[1];
 
  
     
@@ -36,8 +38,10 @@ function Trazi() {
     // Filtar.setRequestHeader('Content-Type', 'application/json');
    
     // var dataJson = JSON.stringify(postFilter);
-    // Filtar.send(dataJson);
+    // Filtar.send(dataJson2);
     // alert("Uspesna unet filtar u bazu");
+
+
     
     CreateColumn();
 }

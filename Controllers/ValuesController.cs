@@ -73,7 +73,6 @@ namespace Admin_Izvestaji_API.Controllers
         // public class dataJson2
         // {
         //     public string from_date {get; set;}
-
         //     public string to_date {get; set;}
         //     public string sector {get; set;}
         //     public string name {get; set;}
@@ -85,16 +84,15 @@ namespace Admin_Izvestaji_API.Controllers
         // public ActionResult PostFiltar(dataJson2 filter)
         // {
 
-        //     var  = new ContextAR();
+        //     var filtarP = new filtar();
 
-        //     empToUpdate.Id = data.Id;
-        //     empToUpdate.Code = data.Code;
-        //     empToUpdate.Name = data.Name;
-        //     empToUpdate.Surname = data.Surname;
-        //     empToUpdate.Title = data.Title;
-        //     empToUpdate.Sector = data.Sector;
-
-        //     ContextAR.SaveChanges();
+        //     from_date = filter.from_date;
+        //     to_date = filter.to_date;
+        //     sector = filter.sector;
+        //     name = filter.name;
+        //     surname = filter.surname;
+            
+        //     filtar.SaveChanges();
 
         //     return Content("Succes", "text/plain");
 
